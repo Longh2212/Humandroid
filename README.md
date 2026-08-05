@@ -2,13 +2,25 @@
 
 > **Note:** This project is my **Graduation Project** (Đồ án tốt nghiệp). It showcases the integration of Artificial Intelligence and hardware control in building a humanoid robot system.
 
-![Humandroid Banner](https://via.placeholder.com/800x400?text=Humandroid+Project) 
-*(Replace this placeholder with a real photo or video of your robot)*
+![Humandroid Robot](image/Picture/z7868155874915_f5bbcc8e52d952856d9b32bcc407c941.jpg) 
 
 ## Introduction
 The **Humandroid** project is a humanoid robot system integrated with Artificial Intelligence (AI). The project includes various components such as Computer Vision, Natural Language Processing (AI Assistant), Inverse Kinematics (IK), and hardware module control including the robot's arms, head, and LED lighting system.
 
 This project serves as a comprehensive demonstration of blending software algorithms with physical hardware to create an interactive robotic system.
+
+### 🌟 Open Source Contribution (InMoov)
+This project is deeply inspired by and contributes to the **[InMoov](http://inmoov.fr/)** project, the first open-source 3D printed life-size robot. By leveraging the InMoov mechanical design, Humandroid extends its capabilities with advanced AI modules, inverse kinematics, and modern computer vision systems, aiming to give back to the open-source robotics community.
+
+## System Architecture
+
+Below is the high-level system architecture of the Humandroid:
+
+![System Architecture](image/chart/ROBOT.drawio.png)
+
+And the hardware circuit diagram:
+
+![Circuit Diagram](image/chart/Sơ%20đồ%20mạch%20điện.drawio.png)
 
 ## Key Features
 - 🧠 **AI Assistant:** An integrated virtual assistant utilizing LLM (OpenAI) for natural communication and task planning.
@@ -26,6 +38,7 @@ humandroid/
 ├── Prompt/                 # Text prompts for AI
 ├── Source/                 # Auxiliary source files (Audio, Models...)
 ├── Vision/                 # Image processing and computer vision
+├── image/                  # Contains project images and charts
 ├── config.yaml             # System configuration (paths, audio devices)
 ├── AI_assisstant.py        # Main AI assistant script
 ├── IK.py                   # Inverse Kinematics for the robotic arm
