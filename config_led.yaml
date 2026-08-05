@@ -1,0 +1,19 @@
+led:
+  brightness: 100
+  custom_modes:
+    MY_ERROR:
+      b: 0
+      effect: blink
+      g: 0
+      r: 255
+    MY_HAPPY:
+      b: 100
+      effect: breathing
+      g: 255
+      r: 0
+    MY_THINK:
+      b: 255
+      effect: rotating
+      g: 100
+      r: 0
+  default_mode: IDLE

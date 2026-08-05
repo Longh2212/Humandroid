@@ -1,0 +1,14 @@
+device:
+  mic_device: USB PnP Sound Device
+  output_device: plughw:CARD=MAX98357A,DEV=0
+  output_db: 8
+location:
+  audio_path: /home/hhl/humandroid/Source/Audio
+  main: /home/hhl/humandroid
+  model_path: /home/hhl/humandroid/AI/Model
+  prompt_path: /home/hhl/humandroid/Prompt
+mouth:
+  closed_angle: 80
+  default_speed: 1.0
+  open_range: 75
+  servo_id: 0
