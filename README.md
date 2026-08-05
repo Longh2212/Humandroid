@@ -1,81 +1,81 @@
 # Humandroid Project
 
+> **Note:** This project is my **Graduation Project** (Đồ án tốt nghiệp). It showcases the integration of Artificial Intelligence and hardware control in building a humanoid robot system.
 
-## Giới thiệu (Introduction)
-Dự án **Humandroid** là một hệ thống robot hình người tích hợp Trí tuệ Nhân tạo (AI). Dự án bao gồm các thành phần về nhận diện hình ảnh (Vision), giao tiếp ngôn ngữ tự nhiên (AI Assistant), điều khiển động học ngược (Inverse Kinematics - IK), và kiểm soát các module phần cứng như cánh tay, đầu, và đèn LED.
+![Humandroid Banner](https://via.placeholder.com/800x400?text=Humandroid+Project) 
+*(Replace this placeholder with a real photo or video of your robot)*
 
-Dự án này là minh chứng cho việc kết hợp giữa phần cứng và phần mềm để tạo ra một hệ thống robot có khả năng tương tác.
+## Introduction
+The **Humandroid** project is a humanoid robot system integrated with Artificial Intelligence (AI). The project includes various components such as Computer Vision, Natural Language Processing (AI Assistant), Inverse Kinematics (IK), and hardware module control including the robot's arms, head, and LED lighting system.
 
-## Tính năng nổi bật (Key Features)
-- 🧠 **AI Assistant:** Trợ lý ảo tích hợp LLM (OpenAI) để giao tiếp và lập kế hoạch (Planner).
-- 👁️ **Robot Vision:** Khả năng nhận diện hình ảnh và môi trường xung quanh.
-- 🦾 **Điều khiển Động học (Kinematics):** Sử dụng thuật toán Inverse Kinematics (IK.py) để điều khiển cánh tay robot mượt mà.
-- 🗣️ **Giao tiếp Âm thanh:** Khả năng nghe (AI_Listen) và nói (AI_speak).
-- 🎮 **Module phần cứng:** Kiểm soát linh hoạt Đầu (Head), Tay (Hand), và hệ thống Đèn (Light).
-- 🖥️ **Giao diện Debug/Monitor:** Màn hình LCD và phần mềm để theo dõi trạng thái hệ thống.
+This project serves as a comprehensive demonstration of blending software algorithms with physical hardware to create an interactive robotic system.
 
-## Cấu trúc thư mục (Directory Structure)
+## Key Features
+- 🧠 **AI Assistant:** An integrated virtual assistant utilizing LLM (OpenAI) for natural communication and task planning.
+- 👁️ **Robot Vision:** Capability to recognize images and perceive the surrounding environment.
+- 🦾 **Kinematics Control:** Uses Inverse Kinematics (`IK.py`) algorithms to control the robotic arms smoothly.
+- 🗣️ **Audio Communication:** Features listening capabilities (`AI_Listen`) and speech generation (`AI_speak`).
+- 🎮 **Hardware Modules:** Flexible control of the Head, Hand, and LED lighting systems.
+- 🖥️ **Debug/Monitor Interface:** A 3.5-inch LCD screen and software interface for monitoring system status.
+
+## Directory Structure
 ```text
 humandroid/
-├── AI/                     # Các script liên quan đến AI (Planner, Chatbot, Call API)
-├── Manager/                # Quản lý các task và state của robot
-├── Prompt/                 # Chứa các prompt text cho AI
-├── Source/                 # Mã nguồn phụ trợ (Audio, Model...)
-├── Vision/                 # Xử lý hình ảnh và computer vision
-├── config.yaml             # Cấu hình hệ thống (paths, thiết bị âm thanh)
-├── AI_assisstant.py        # Code chính của trợ lý AI
-├── IK.py                   # Inverse Kinematics cho cánh tay robot
-├── Robot_Vision.py         # Code thị giác máy tính của robot
-├── Robot_handcontrol.py    # Điều khiển cánh tay
-├── Robot_headcontrol.py    # Điều khiển đầu
-├── Robot_lightcontrol.py   # Điều khiển đèn LED
-└── main.py                 # File thực thi chính của dự án
+├── AI/                     # AI related scripts (Planner, Chatbot, API calls)
+├── Manager/                # Manages robot states and tasks
+├── Prompt/                 # Text prompts for AI
+├── Source/                 # Auxiliary source files (Audio, Models...)
+├── Vision/                 # Image processing and computer vision
+├── config.yaml             # System configuration (paths, audio devices)
+├── AI_assisstant.py        # Main AI assistant script
+├── IK.py                   # Inverse Kinematics for the robotic arm
+├── Robot_Vision.py         # Computer vision script
+├── Robot_handcontrol.py    # Arm control script
+├── Robot_headcontrol.py    # Head control script
+├── Robot_lightcontrol.py   # LED control script
+└── main.py                 # Main execution file
 ```
 
-## Yêu cầu hệ thống (Requirements)
-- **Phần cứng:**
-  - Micro (USB PnP Sound Device)
-  - Loa (plughw:CARD=MAX98357A,DEV=0)
-  - Màn hình LCD 3.5 inch (tuỳ chọn)
-  - Các module Servo cho tay, đầu, miệng...
-- **Phần mềm:**
+## System Requirements
+- **Hardware:**
+  - Microphone (USB PnP Sound Device)
+  - Speaker (`plughw:CARD=MAX98357A,DEV=0`)
+  - 3.5-inch LCD Screen (Optional)
+  - Servo modules for arms, head, mouth, etc.
+- **Software:**
   - Python 3.x
-  - OpenAI API Key (cấu hình qua biến môi trường `OPENAI_API_KEY`)
-  - Các thư viện Python (liệt kê trong `requirements.txt` nếu có)
+  - OpenAI API Key (configured via `OPENAI_API_KEY` environment variable)
+  - Required Python libraries (listed in `requirements.txt`)
 
-## Cài đặt (Installation)
-1. Clone repository này:
+## Installation
+1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/humandroid.git
+   git clone https://github.com/Longh2212/Humandroid.git
    cd humandroid
    ```
-2. Tạo môi trường ảo (Virtual Environment):
+2. Create a virtual environment:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # Trên Windows: venv\Scripts\activate
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
-3. Cài đặt các thư viện cần thiết:
+3. Install the required dependencies:
    ```bash
-   # Nếu có requirements.txt
    pip install -r requirements.txt 
    ```
-4. Thiết lập API Key:
-   Tạo file `.env` ở thư mục gốc và thêm:
+4. Set up the API Key:
+   Create a `.env` file in the root directory and add your key:
    ```env
    OPENAI_API_KEY=your_api_key_here
    ```
 
-## Hướng dẫn sử dụng (Usage)
-Chạy file thực thi chính:
+## Usage
+Run the main execution file:
 ```bash
 python main.py
 ```
 
-## Đóng góp (Contributing)
-Mọi đóng góp cho dự án đều được hoan nghênh. Vui lòng tạo Pull Request hoặc mở Issue nếu bạn gặp bất kỳ vấn đề gì.
+## Author
+- **Hoàng Hưng Long** - *Project Lead / Developer* - [GitHub](https://github.com/Longh2212)
 
-## Tác giả (Author)
-- **[Tên của bạn]** - *Project Lead / Developer* - [Link GitHub của bạn/LinkedIn]
-
-## Giấy phép (License)
-Dự án được phân phối dưới giấy phép [MIT](LICENSE). Xem file `LICENSE` để biết thêm chi tiết.
+## License
+This project is licensed under the [MIT](LICENSE) License. See the `LICENSE` file for more details.
