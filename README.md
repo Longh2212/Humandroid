@@ -2,7 +2,7 @@
 
 > **Note:** This project is my **Graduation Project** (Đồ án tốt nghiệp). It showcases the integration of Artificial Intelligence and hardware control in building a humanoid robot system.
 
-![Humandroid Robot](image/Picture/z7868155874915_f5bbcc8e52d952856d9b32bcc407c941.jpg) 
+![Humandroid Robot](image/Picture/z7901839132177_87c2476203b6f430dd3fa9d597292ef7.jpg) 
 
 ## Introduction
 The **Humandroid** project is a humanoid robot system integrated with Artificial Intelligence (AI). The project includes various components such as Computer Vision, Natural Language Processing (AI Assistant), Inverse Kinematics (IK), and hardware module control including the robot's arms, head, and LED lighting system.
